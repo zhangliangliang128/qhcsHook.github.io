@@ -38,7 +38,6 @@
 {
 	var warp = document.getElementById("warp")
 	var box = document.getElementById('box')
-	console.log(box)
 	this.warp.onclick = function () {
 		var xhr = new XMLHttpRequest();
 		xhr.open('GET',"https://api.uomg.com/api/rand.qinghua?format=text",true)
@@ -46,7 +45,6 @@
 		xhr.onreadystatechange = function(e){
 			if(xhr.readyState == 4) {
 			if(xhr.status == 200){
-			console.log(box)
 			box.innerText = xhr.responseText
 			}
 		}
